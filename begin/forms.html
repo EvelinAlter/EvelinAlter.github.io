@@ -14,11 +14,9 @@
 				<fieldset>
 					<legend>Your contact information</legend>
 					<label for="name">Your name </label>
-						<input type="text"
-						id="name" name="name">
+						<input type="text" id="name" name="name">
 					<label for="phone_number">Phone number</label>
-						<input type="tel"
-					id="phone_number" name="phone_number">
+						<input type="tel" id="phone_number" name="phone_number" placeholder="+458">
 					<label for="email">Email</label>
 						<input type="email" id="email" name="email">
 				</fieldset>
@@ -52,6 +50,7 @@
 								value="borgstyle">Borg-style cube
 							</label>
 							</ul> 
+					
 					<label for="type_of_abduction">What type of abduction experience do you want?</label>
 						<select id="type_of_abduction" name="type_of_abduction">	
 							<option selected>
@@ -67,9 +66,12 @@
 						</select>
 
 					<label for="special_requests">Special requests:</label>
-					<textarea id="special_requests" name="special_requests">
-					<label for="add_to_mailing_list">Add me to your email list</label>
-					<input type="checkbox" id="add_to_mailing_list" name="add_to_mailing_list">
+					<textarea id="special_requests" name="special_requests"></textarea>
+					
+					<label for="subscribe">
+						<input type="checkbox" id="subscribe" name="subscribe" value="subscribe" checked>
+						Add me to your email list
+					</label>
 				</fieldset>				
 			</form>
 		</section>
