@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	
 	<meta charset="UTF-8">
 	<title>Alien Abduction Order Form</title>
 	<link href="css/forms.css" rel="stylesheet">
@@ -16,63 +20,49 @@
 				<fieldset>
 					<legend>Your contact information</legend>
 					<label for="name">Your name </label>
-						<input type="text" id="name" name="name">
+					<input type="text" id="name" name="name">
 					<label for="phone_number">Phone number</label>
-						<input type="tel" id="phone_number" name="phone_number" placeholder="+458">
+					<input type="tel" id="phone_number" name="phone" placeholder="+458">
 					<label for="email">Email</label>
-						<input type="email" id="email" name="email">
+					<input type="email" id="email" name="email">
 				</fieldset>
 
 				<fieldset>
 						<legend>About your abduction </legend>
-							<label for="abduction_date">Requested date</label>
-								<input type="date" id="abduction_date" name="abduction_date">	
-							<label for="qty">How many people would you like abducted?</label>
-								<input type="number" id="qty" name="qty" min="1" max="10">
-							<p>What type of UFO do you prefer?
-							</p>
-							<label>
-								<input type="radio"
-								name="ufotype" 
-								value="classic" checked>Classic oval UFOs
-							</label>
-							<label>
-								<input type="radio"
-								name="ufotype" 
-								value="starwars">Star Wars-style Imperial cruiser
-							</label>
-							<label>
-								<input type="radio"
-								name="ufotype" 
-								value="battlestar">Battlestar Galactica-style Viper
-							</label>
-							<label>
-								<input type="radio"
-								name="ufotype" 
-								value="borgstyle">Borg-style cube
-							</label>
-							</ul> 
+						<label for="date">Requested date</label>
+						<input type="date" id="date" name="date">	
+						<label for="qty">How many people would you like abducted?</label>
+						<input type="number" id="qty" name="qty" min="1" max="10">
+						
+						<p>What type of UFO do you prefer?</p>
+						<label>
+							<input type="radio" name="ufotype"	value="classic" checked> Classic oval UFOs
+						</label>
+						<label>
+							<input type="radio" name="ufotype" value="starwars"> Star Wars-style Imperial cruiser
+						</label>
+						<label>
+							<input type="radio" name="ufotype" value="battlestar"> Battlestar Galactica-style Viper
+						</label>
+						<label>
+							<input type="radio" name="ufotype" value="borgstyle"> Borg-style cube
+						</label>
+						</ul> 
 					
-					<label for="type_of_abduction">What type of abduction experience do you want?</label>
-						<select id="type_of_abduction" name="type_of_abduction">	
-							<option selected>
-								Select one...</option>
-							<option value="abdtype">
-								Tour of the solar system</option>
-							<option value="abdtype">
-								Alien dinner and discussion</option>
-							<option value="abdtype">
-								Alien dance lessons</option>
-							<option value="abdtype">
-								Whale watching</option>
-						</select>
+					<label for="abdtype">What type of abduction experience do you want?</label>
+					<select id="abdtype" name="abdtype">	
+						<option selected> Select one...</option>
+						<option value="abdtype"> Tour of the solar system</option>
+						<option value="abdtype"> Alien dinner and discussion</option>
+						<option value="abdtype"> Alien dance lessons</option>
+						<option value="abdtype"> Whale watching</option>
+					</select>
 
-					<label for="special_requests">Special requests:</label>
-					<textarea id="special_requests" name="special_requests"></textarea>
+					<label for="comments">Special requests:</label>
+					<textarea id="comments" name="comments"></textarea>
 					
-					<label for="subscribe">
-						<input type="checkbox" id="subscribe" name="subscribe" value="subscribe" checked>
-						Add me to your email list
+					<label>
+						<input id="subscribe" name="subscribe" type="checkbox" value="subscribe" checked> Add me to your email list
 					</label>
 				</fieldset>
 			<button type="submit">Submit</button>				
@@ -86,8 +76,11 @@
 				Suite 3625 &middot;
 				Minneapolis, MN 55402
 			</address>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1995.6834507862723!2d-93.2723241227384!3d44.977757283803044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b3329a733800b1%3A0x2e151ae0d4a5e091!2s60%20South%206th%20St%20%233625%2C%20Minneapolis%2C%20MN%2055402%2C%20USA!5e0!3m2!1sen!2sil!4v1649960156809!5m2!1sen!2sil" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/GEgvsjpoaoo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</aside>
 	</div>
+	<script src="js/forms.js"></script>
 </body>
 </html>
 
